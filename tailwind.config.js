@@ -12,7 +12,8 @@ export default {
         },
 
         secondary: {
-          100: '#1d262b'
+          100: '#818b90',
+          200: '#1d262b'
         },
 
         accent: {
