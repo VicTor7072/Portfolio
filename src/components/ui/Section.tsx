@@ -11,7 +11,7 @@ type SectionProps = {
 
 const Section = ({ number, id, className, children }: SectionProps) => {
 	const classes = cn(
-		'flex flex-col items-start justify-between py-10 gap-5 md:flex-row md:gap-y-20',
+		'flex flex-col items-start justify-between py-32 gap-5 md:flex-row md:gap-y-20',
 		className
 	);
 

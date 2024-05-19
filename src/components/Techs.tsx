@@ -20,8 +20,8 @@ const Techs = () => {
 
 	return (
 		<Section number="03" id="techs" className="md:flex-col">
-			<div className="grid w-full grid-cols-4 gap-10 gap-x-20 grid-flow-col">
-				<div className="col-span-1 flex flex-col gap-y-10">
+			<div className="grid w-full grid-cols-1 gap-10 gap-x-20 md:grid-cols-4">
+				<div className="flex flex-col gap-y-10 md:col-span-1">
 					<Title className="text-3xl md:text-3xl">
 						These are the technologies I have learned by creating
 						projects
@@ -37,7 +37,7 @@ const Techs = () => {
 
 					{techChunks.map((techChunk) => (
 						<>
-							<div className="flex w-5/6 items-center justify-between">
+							<div className="flex w-5/6 items-center justify-between flex-wrap gap-5">
 								{techChunk.map((tech) => (
 									<img
 										src={tech.iconURL}
@@ -51,19 +51,6 @@ const Techs = () => {
 						</>
 					))}
 				</div>
-
-				{/* {techs.map((tech, i) => (
-						<div
-							key={i}
-							className="project-box flex h-32 w-32 items-center justify-center rounded-md border-2 border-slate-200 p-4 transition-all duration-200"
-						>
-							<img
-								src={tech.iconURL}
-								title={tech.name}
-								className="h-full"
-							/>
-						</div>
-					))} */}
 			</div>
 		</Section>
 	);
