@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-box:hover {
+	box-shadow: 10px 10px 0px 0px;
+}
+
+* {
+	scroll-behavior: smooth;
+}
