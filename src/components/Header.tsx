@@ -3,13 +3,21 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { cn } from '../utils/cn';
 
+import { toggle } from '../app/langSlice';
+import { useAppDispatch, useAppSelector } from '../hooks';
+import { useTranslate } from '../hooks/translate';
+
 const Header = () => {
+	const lang = useAppSelector((state) => state.lang.value);
+	const dispatch = useAppDispatch();
+	const translate = useTranslate();
+
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	if (isNavOpen) {
 		document.body.style.overflow = 'hidden';
 	} else {
-		document.body.style.overflow = ""
+		document.body.style.overflow = '';
 	}
 
 	return (
@@ -36,22 +44,22 @@ const Header = () => {
 					<ul className="flex flex-col gap-16 text-center text-lg font-semibold lg:flex-row">
 						<li className="cursor-default transition-colors duration-200 hover:text-accent-200">
 							<a href="#hero" onClick={() => setIsNavOpen(false)}>
-								Home
+								{translate('Home', 'Ana Sayfa')}
 							</a>
 						</li>
 						<li className="cursor-default transition-colors duration-200 hover:text-accent-200">
 							<a href="#projects" onClick={() => setIsNavOpen(false)}>
-								Projects
+								{translate('Projects', 'Projeler')}
 							</a>
 						</li>
 						<li className="cursor-default transition-colors duration-200 hover:text-accent-200">
 							<a href="#techs" onClick={() => setIsNavOpen(false)}>
-								Technologies
+								{translate('Technologies', 'Teknolojiler')}
 							</a>
 						</li>
 						<li className="cursor-default transition-colors duration-200 hover:text-accent-200">
 							<a href="#contact" onClick={() => setIsNavOpen(false)}>
-								Contact
+								{translate('Contact', 'İletişim')}
 							</a>
 						</li>
 					</ul>
@@ -62,6 +70,16 @@ const Header = () => {
 						'mx-auto flex self-center': isNavOpen,
 					})}
 				>
+					<button
+						className="mr-10 w-7"
+						onClick={() => dispatch(toggle())}
+					>
+						{lang === 'tr' ? (
+							<img src="/svgs/Turkish-Flag.svg" />
+						) : (
+							<img src="/svgs/UK-Flag.svg" alt="" />
+						)}
+					</button>
 					<a
 						href="https://www.linkedin.com/in/egemen-tarik%C3%A7i-834083251/"
 						className="cursor-pointer rounded p-2 transition-colors duration-200 hover:bg-blue-600 hover:text-primary-100"

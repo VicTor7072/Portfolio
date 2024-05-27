@@ -1,10 +1,13 @@
 import { techs } from '../data/techs';
+import { useTranslate } from '../hooks/translate';
 import { TTechs } from '../types/techs';
 import Button from './ui/Button';
 import Section from './ui/Section';
 import Title from './ui/Title';
 
 const Techs = () => {
+	const translate = useTranslate();
+
 	const techChunks = techs.reduce(
 		(result: TTechs[][], item: TTechs, index: number) => {
 			const chunkIndex = Math.floor(index / 4);
@@ -22,12 +25,16 @@ const Techs = () => {
 			<div className="grid w-full grid-cols-1 gap-14 gap-x-20 md:grid-cols-4">
 				<div className="col-span-3 flex flex-col gap-y-10 md:col-span-1">
 					<Title className="text-1xl md:text-3xl">
-						These are the technologies I have learned by creating
-						projects
+						{translate(
+							'These are the technologies I have learned by creating projects',
+							'Proje oluşturarak öğrendiğim teknolojiler bunlar'
+						)}
 					</Title>
 
 					<Button>
-						<a href="#contact">Contact Me</a>
+						<a href="#contact">
+							{translate('Contact Me', 'Bana Ulaşın')}
+						</a>
 					</Button>
 				</div>
 

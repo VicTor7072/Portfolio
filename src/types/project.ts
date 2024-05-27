@@ -1,5 +1,5 @@
 export type TProject = {
-	title: string;
-	description: string;
-	url?: string
-}
+	title: { eng: string; tr: string };
+	description: { eng: string; tr: string };
+	url?: string;
+};
