@@ -71,7 +71,7 @@ const Header = () => {
 					})}
 				>
 					<button
-						className="mr-10 w-7"
+						className="mr-10 w-7 hidden lg:inline-block"
 						onClick={() => dispatch(toggle())}
 					>
 						{lang === 'tr' ? (
@@ -100,6 +100,14 @@ const Header = () => {
 					</a>
 				</div>
 			</header>
+		
+			<button className="mr-10 w-7 absolute right-10 top-5 lg:hidden" onClick={() => dispatch(toggle())}>
+				{lang === 'tr' ? (
+					<img src="/svgs/Turkish-Flag.svg" />
+				) : (
+					<img src="/svgs/UK-Flag.svg" alt="" />
+				)}
+			</button>
 
 			<button
 				className="absolute right-0 top-0 p-5 text-3xl lg:hidden"
