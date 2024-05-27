@@ -13,14 +13,14 @@ const Hero = () => {
 
 			<div className="flex w-full flex-col items-center justify-between gap-5 sm:flex-row">
 				<div className="flex flex-col gap-y-3 self-start text-4xl font-medium tracking-tight sm:self-auto sm:text-nowrap sm:text-6xl md:gap-y-5 lg:gap-y-10 lg:text-8xl">
-					<p>{translate('Hi. I am a', 'Merhaba, ben')}</p>
+					<p>{translate('Hi. I am a', 'Merhaba, ben bir')}</p>
 					<p className="font-playfair text-4xl italic sm:text-5xl lg:text-7xl">
 						{translate(
 							'computer programmer',
 							'bilgisayar programcısıyım'
 						)}
 					</p>
-					<p>{translate('based in İzmir', 'İzmir\'de yaşıyorum')}</p>
+					<p>{translate('based in İzmir', 'İzmir\'deyim')}</p>
 				</div>
 
 				<img src="/imgs/pp.jpg" alt="" className="w-60 md:w-96" />
