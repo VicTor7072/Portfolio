@@ -16,7 +16,7 @@ const Project = ({ title, description, url, className }: ProjectProps) => {
 	);
 
 	return (
-		<a href={url} className={classes}>
+		<a href={url} target="_blank" className={classes}>
 			<Title>{title}</Title>
 			<Description>{description}</Description>
 		</a>

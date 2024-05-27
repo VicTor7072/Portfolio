@@ -3,7 +3,7 @@ import { FaArrowDown } from 'react-icons/fa';
 const Hero = () => {
 	return (
 		<section
-			className="flex h-[calc(100vh-120px)] min-h-[715px] flex-col gap-4 py-5 md:justify-between"
+			className="-mt-10 flex flex-col gap-10 py-5 sm:h-[calc(100vh-120px)] sm:justify-between md:-mt-0"
 			id="hero"
 		>
 			<div></div>

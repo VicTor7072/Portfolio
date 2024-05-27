@@ -6,13 +6,19 @@ import { cn } from '../utils/cn';
 const Header = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
+	if (isNavOpen) {
+		document.body.style.overflow = 'hidden';
+	} else {
+		document.body.style.overflow = ""
+	}
+
 	return (
 		<>
 			<header
 				className={cn(
 					'sticky top-0 mt-4 flex justify-between lg:items-center',
 					{
-						'absolute left-0 top-0 mt-0 h-screen w-screen flex-col bg-primary-100 px-7 py-4':
+						'absolute left-0 top-0 mt-0 h-dvh w-screen flex-col bg-primary-100 px-7 py-4':
 							isNavOpen,
 					}
 				)}
@@ -70,7 +76,7 @@ const Header = () => {
 					</a>
 					<a
 						href="https://www.instagram.com/egementarikci/"
-						className="cursor-pointer rounded p-2 transition-all duration-200 bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-primary-100"
+						className="cursor-pointer rounded bg-gradient-to-tr p-2 transition-all duration-200 hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-primary-100"
 					>
 						<FaInstagram />
 					</a>
