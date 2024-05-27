@@ -7,7 +7,7 @@ import Techs from './components/Techs';
 
 const Home = () => {
 	return (
-		<div className="w-full">
+		<div className="w-full flex flex-col gap-y-20 md:gap-y-32">
 			<Hero />
 			<About />
 			<Projects />

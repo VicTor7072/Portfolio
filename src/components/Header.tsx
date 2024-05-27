@@ -57,20 +57,20 @@ const Header = () => {
 					})}
 				>
 					<a
-						href=""
-						className="cursor-pointer rounded p-2 transition-colors duration-200 hover:bg-accent-100 hover:text-primary-100 active:bg-accent-200"
+						href="https://www.linkedin.com/in/egemen-tarik%C3%A7i-834083251/"
+						className="cursor-pointer rounded p-2 transition-colors duration-200 hover:bg-blue-600 hover:text-primary-100"
 					>
 						<FaLinkedin />
 					</a>
 					<a
-						href=""
-						className="cursor-pointer rounded p-2 transition-colors duration-200 hover:bg-accent-100 hover:text-primary-100 active:bg-accent-200"
+						href="https://github.com/VicTor7072"
+						className="cursor-pointer rounded p-2 transition-colors duration-200 hover:bg-black hover:text-primary-100"
 					>
 						<FaGithub />
 					</a>
 					<a
-						href=""
-						className="cursor-pointer rounded p-2 transition-colors duration-200 hover:bg-accent-100 hover:text-primary-100 active:bg-accent-200"
+						href="https://www.instagram.com/egementarikci/"
+						className="cursor-pointer rounded p-2 transition-all duration-200 bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] hover:text-primary-100"
 					>
 						<FaInstagram />
 					</a>

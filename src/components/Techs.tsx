@@ -20,9 +20,9 @@ const Techs = () => {
 
 	return (
 		<Section number="03" id="techs" className="md:flex-col">
-			<div className="grid w-full grid-cols-1 gap-10 gap-x-20 md:grid-cols-4">
-				<div className="flex flex-col gap-y-10 md:col-span-1">
-					<Title className="text-3xl md:text-3xl">
+			<div className="grid w-full grid-cols-1 gap-14 gap-x-20 md:grid-cols-4">
+				<div className="flex flex-col gap-y-10 col-span-3 md:col-span-1">
+					<Title className="text-1xl md:text-3xl">
 						These are the technologies I have learned by creating
 						projects
 					</Title>
@@ -33,11 +33,9 @@ const Techs = () => {
 				</div>
 
 				<div className="col-span-3 flex flex-col items-center gap-y-10">
-					<div className="w-full border-t border-secondary-200"></div>
-
-					{techChunks.map((techChunk) => (
+					{techChunks.map((techChunk, i) => (
 						<>
-							<div className="flex w-5/6 items-center justify-between flex-wrap gap-5">
+							<div className="flex w-5/6 items-center justify-center md:justify-between flex-wrap gap-7" key={i}>
 								{techChunk.map((tech) => (
 									<img
 										src={tech.iconURL}
@@ -47,7 +45,7 @@ const Techs = () => {
 									/>
 								))}
 							</div>
-							<div className="w-full border-t border-secondary-200"></div>
+							<div className="w-full border-t border-secondary-200 last:hidden"></div>
 						</>
 					))}
 				</div>

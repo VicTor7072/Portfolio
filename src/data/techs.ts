@@ -3,38 +3,42 @@ import { TTechs } from '../types/techs';
 export const techs = [
 	{
 		name: 'Java',
-		iconURL: "/svgs/JAVA.svg"
+		iconURL: '/svgs/JAVA.svg',
 	},
 	{
 		name: 'C#',
-		iconURL: "/svgs/C-Sharp.svg"
+		iconURL: '/svgs/C-Sharp.svg',
 	},
 	{
 		name: 'HTML',
-		iconURL: "/svgs/HTML.svg"
+		iconURL: '/svgs/HTML.svg',
 	},
 	{
 		name: 'CSS',
-		iconURL: "/svgs/CSS.svg"
+		iconURL: '/svgs/CSS.svg',
 	},
 	{
 		name: 'JavaScript',
-		iconURL: "/svgs/JS.svg"
+		iconURL: '/svgs/JS.svg',
+	},
+	{
+		name: 'Python',
+		iconURL: 'svgs/Python.svg',
 	},
 	{
 		name: 'MySQL',
-		iconURL: "/svgs/MySql.svg"
+		iconURL: '/svgs/MySql.svg',
 	},
 	{
 		name: 'Sql-Server',
-		iconURL: "/svgs/Sql-Server.svg"
+		iconURL: '/svgs/Sql-Server.svg',
 	},
 	{
 		name: 'GitHub',
-		iconURL: "/svgs/Github.svg"
+		iconURL: '/svgs/Github.svg',
 	},
 	{
 		name: 'Git',
-		iconURL: "/svgs/Git.svg"
+		iconURL: '/svgs/Git.svg',
 	},
 ] as TTechs[];

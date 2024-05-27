@@ -8,7 +8,7 @@ const Contact = () => {
 
 			<a
 				href="mailto:tarikciegemen@gmail.com"
-				className="text-4xl tracking-tight underline sm:text-6xl md:text-7xl"
+				className="text-2xl tracking-tight underline sm:text-6xl md:text-7xl"
 			>
 				tarikciegemen@gmail.com
 			</a>
